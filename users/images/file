@@ -1,0 +1,10 @@
+ <input type="checkbox" id="st1" name="stars[]" value="5" checked/>
+                        <label for="st1"></label>
+                        <input type="checkbox" id="st2" name="stars[]" value="4" checked/>
+                        <label for="st2"></label>
+                        <input type="checkbox" id="st3" name="stars[]" value="3" checked/>
+                        <label for="st3"></label>
+                        <input type="checkbox" id="st4" name="stars[]" value="2" checked/>
+                        <label for="st4"></label>
+                        <input type="checkbox" id="st5" name="stars[]" value="1" />
+                        <label for="st5"></label>

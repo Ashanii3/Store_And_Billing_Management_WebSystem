@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40400%3B500&display=swap%27%29%3B');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+   
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.co{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../images/gg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url("../../images/n.jpg");
+    }20%{
+        background-image: url("../../images/qq.jpg");
+    }40%{
+        background-image: url("../../images/k.jpg");
+    }60%{
+        background-image: url("../../images/g.jpg");
+    }80%{
+        background-image: url("../../images/vv.jpg");
+    }100%{
+        background-image: url("../../images/g.jpg");
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+h2{
+    text-align: center;
+    align-items: center;
+    
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 450px;
+    width: 430px;
+    background-color: rgb(255, 220, 220,0.5);
+    border-radius: 25px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border: 3px solid rgba(146, 128, 128, 0.4);
+    /* overflow: hidden; */
+    margin-top: -90px;
+
+    padding: 30px 5px 5px 30px;
+}
+
+
+.header h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+
+.input{
+    width: 100%;
+}
+
+.input-field{
+   
+    margin: 20px 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-box{
+    width: 95%;
+    height: 40px;
+    font-size: 16px;
+    border: none; 
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding: 10px 20px 10px 20px;
+    background:  rgba(211, 173, 173, 0.8);
+    backdrop-filter: blur(2px);
+    outline: none;
+}
+
+.input-field ::placeholder{
+     left: 40px;
+    font-size: 15px;
+    color: rgb(92, 89, 89);
+}
+
+.input-field.input-box{
+    color: rgb(92, 89, 89);
+    width: 100%;
+}
+
+input[type="file"]::file-selector-button {
+    color: #424145; 
+    border-radius: 4px;
+    padding: 20px -15px ;
+    height: 25px;
+    cursor: pointer;
+    background-color: rgba(146, 128, 128, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+img{
+    width: 20px;
+    position: absolute;
+    top: 10px;
+     right: 29px;
+     cursor: pointer;
+ }
+
+
+.rdb{
+    background:  rgba(185, 170, 170, 0.8);
+    backdrop-filter: blur(2px);
+    outline: none;
+}
+
+.radio{
+    /* color: rgb(128, 133, 133); */
+    position: absolute;
+    top: 10px;
+    left: 130px;
+}
+
+
+#submit{
+    font-size: 20px;
+    margin-top: 5px;
+    width: 130px; height: 40px;
+    font-weight: bold;
+    box-shadow: 0px 4px 20px rgb(63, 9, 9,0.145);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.newAcc{
+    margin-top: -5px;
+    margin-left: 10px;
+}

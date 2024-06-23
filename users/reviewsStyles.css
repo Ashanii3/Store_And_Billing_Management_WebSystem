@@ -1,0 +1,110 @@
+.wrapper {
+            
+            border: none;
+            font-size: 14px;
+           position: absolute;
+           left: 53%;
+           top: 50%;
+           align-items: center;
+            justify-content: center;
+            transform: translateX(-50%);
+            }
+
+.wrapper input {
+  border: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0;
+}
+
+.wrapper label {
+  position: relative;
+  float: right;
+  color: #C8C8C8;
+}
+
+.wrapper label:before {
+  margin: 5px;
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 1.5em;
+  color: #ccc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.wrapper input:checked ~ label:before {
+  color: #FFC107;
+}
+
+.wrapper label:hover ~ label:before {
+  color: #ffdb70;
+}
+
+.wrapper label:hover:before {
+  color: #FFC107;
+}
+
+    #buttonSubmit{
+          transition: transform .2s;
+    }
+
+    #buttonSubmit:hover{
+         transform: scale(1.1);
+    }
+
+
+    .container .row{
+         margin-left: 50px;
+    }
+        
+
+
+
+  /******** your review section for user **********/
+
+  .feedbackCard{
+    width:90%;
+ margin-bottom: 28px;
+    
+    }
+    
+  .feedbackCard h3{
+    font-size: 14px;
+    font-weight: 400;
+    flex: 1;
+    
+  }
+  .feedbackCard .deleteLine a i{
+        position: relative;
+        color: black;
+        
+  }
+
+  .star {
+    visibility:hidden;
+    font-size:30px;
+    cursor:pointer;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    
+}
+.star:before {
+   content: "\2606";
+  
+   visibility: visible;
+   color: #FFC107;
+}
+.star:checked:before {
+   
+   content: "\2605";   
+   visibility:visible;
+   color: #FFC107;
+}
+

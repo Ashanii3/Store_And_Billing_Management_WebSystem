@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;   
+}
+
+
+  .title span{
+    color:#0275d8
+  }
+body{
+    overflow-y: scroll;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.image{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.navig{
+    position: sticky;
+    top: 0;
+    /* height: 100%; */
+    height: 100vh;
+    width: 110px;
+    padding: 0 1.7rem;
+    background: #d4d9d8;
+    /* transition: 0.5s; */
+    overflow: hidden;
+    transition: all 0.5s linear;
+    
+}
+
+.navig:hover {
+    width: 270px;
+    transition: 0.5s;
+}
+.navig ul{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    padding-left: 15px;
+    
+    width: 100%;
+    
+}
+
+.navig ul h3{
+    margin-bottom: 30px;
+}
+
+.navig ul li{
+    position: relative;
+    width: 90%;
+    padding-bottom: 0.5rem;
+    margin-left: 14px ;
+    list-style: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    /* border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px; */
+}
+
+
+
+.navig ul li:hover{
+    background-color:#bbc3c9;
+    
+}
+
+
+
+.navig ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    gap: 1.5rem;
+    
+}
+
+
+
+.navig ul li a i{
+    position: relative;
+    display: block;
+    min-width: 50px;
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-left: 12px;
+    transition: transform .2s;
+}
+
+.navig ul li a i:hover{
+    transform: scale(1.2);
+}
+
+.navig ul li a .title{
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 80px;
+    white-space: nowrap;
+}
+
+#delete{
+    transition: transform .2s;
+}
+#delete:hover{
+    transform: scale(1.4);
+}
+
+
+
+
+
+/* -----------------------counters---------- */
+
+#box{
+   
+    border: 1px solid #e1e3e5;
+    height: 32vmin; 
+    width: 29vmin;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    background-color:#f5f8fb;
+    justify-content: space-around;
+    -webkit-backdrop-filter: blur(35px);
+    backdrop-filter: blur(15px);
+    padding: 1em;
+    border-radius: 0.7em;
+    border-bottom: 8px solid blue;
+  }
+
+#box i{
+    color: blue;
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+
+span.num{
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 3em;
+}
+span.Nonum{
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 3em;
+}
+#box h3{
+    text-align: center;
+    font-weight: 500;
+    line-height: 0;
+}
+
+
+#rowOne{
+    height: 40vh;
+    width:75vw;
+    
+}
+#rowTwo{
+    margin: 10px;
+  }
+
+
+
+/************ latest orders ***********8*/
+.boxInfo{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    background-color: #f5f8fb;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 0.7em;
+    text-align: left;
+}
+.Title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 12px;
+}
+
+.orderUser{
+    /* width: 28px;
+    height: 28px;
+    object-fit:contain; */
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+table{
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  
+
+
+
+
+  #exclamation{
+    color: #cc2d4a;
+  }

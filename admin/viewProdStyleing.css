@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-y: scroll;
+}
+
+i {
+    margin-left: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#productColumn{
+    width:20%;
+}
+.imgProduct{
+    width: 70px;
+    height: 70px;
+    object-fit:contain;
+
+}
+
+#edit ,#delete{
+    transition: transform .2s;
+}
+#edit:hover, #delete:hover{
+    transform: scale(1.4);
+}
+
+
+
+
+
+section {
+    /* position: fixed; */
+    height: 100%;
+    width: 100%;
+  
+  }
+  button {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 14px 22px;
+    border: none;
+    background: #4070f4;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #265df2;
+  }
+  button.show-modal,
+  .modal-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  section.active .show-modal {
+    display: none;
+  }
+  .overlay {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+  }
+  section.active .overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 24px;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  section.active .modal-box {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .modal-box i {
+    font-size: 70px;
+    color: #4070f4;
+  }
+  .modal-box h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+  }
+  .modal-box h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+  }
+  .modal-box .buttons {
+    margin-top: 25px;
+  }
+  .modal-box button {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 0 10px;
+  }
+
+
+/* .model{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+.popup{
+    width: 950px;
+    height: 500px;
+    background: rgb(220, 214, 215);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    padding: 20px 30px 30px;
+    transition: transform 0.4s,top 0.4s;
+}
+
+.retable{
+    width: 70%;
+}
+
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+   
+}
+
+.open-overlay{
+   visibility: visible;
+} */

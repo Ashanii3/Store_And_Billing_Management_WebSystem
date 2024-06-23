@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%)scale(1.25);
+    width: 880px;
+    height: 425px;
+    padding: 20px;
+    background: #f3eaea;
+    border-radius: 11px;
+    box-shadow: 2px 2px 4px 2px ;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transition 20ms ease-in-out 0ms;
+}
+
+.popup.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%)scale(1);
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transition 20ms ease-in-out 0ms;
+}
+
+.popup .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    background:red;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.popup .close-btn:hover{
+    transform: scale(1.2);
+}
+
+.popup h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.popup .form .form-content{
+    margin: 13px;
+    
+}
+
+
+.popup .form img{
+    width: 88%;
+}
+
+
+.popup .form .form-content .btn{
+    font-weight: bold;
+    width: 22%;
+    position: absolute;
+   left: 340px;
+   padding: 5px;
+   
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background:#186aed ;
+    color: white;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.popup .form .form-content .btn:hover{
+    transform: scale(1.2);
+}
+
+
+.popup .form  #radio{
+    margin-left: 15px;   
+}
+
+.amounts{
+    position: absolute;
+    right: 80px;
+
+}
+
+ h6{
+    font-size: 11px;
+    position: absolute;
+    right: 80px;
+    color: #696868;
+    
+}
